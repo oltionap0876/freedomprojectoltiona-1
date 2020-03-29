@@ -1,7 +1,6 @@
 .a{
   font-family: 'Courier New', Courier, monospace;
   font-size: 100px;
-  font-color: black;
   background:transparent;
   position: absolute;
   bottom: 5em;
@@ -22,5 +21,8 @@
 }
 .nav-wrapper{
   text-align: bottom;
-  background: black;
+  background: lavender;
+}
+.cool:hover{
+  background-color: black;
 }

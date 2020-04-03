@@ -25,4 +25,15 @@
 }
 .cool:hover{
   background-color: black;
+  color: white;
+}
+
+.cool{
+  color: black;
+}
+.col{
+  column-count: 3;
+  color: black;
+  column-rule-style: double;
+  
 }

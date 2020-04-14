@@ -7,8 +7,61 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"></script>
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <p class="a c" style="height:100"><b>PROCRASTINATION</b></p>
-    <img src="stress.png" class="b">
+    
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  font-size: 17px;
+}
+
+.container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container img {vertical-align: middle;}
+
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  top: 5;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 96%;
+  transition: .5s ease;
+  opacity:0;
+  color: #F0F8FF;
+  font-size: 40px;
+  font-family: 'Courier Prime', monospace;
+  padding: 40px;
+  text-align: center;
+  align: center;
+}
+.shadow {filter: drop-shadow(8px 8px 10px Black);}
+.container:hover .overlay {
+  opacity: 1;
+</style>
+<div class="container">
+  <img src="proc.png" class="b shadow" style="width:100%;">
+  <div class="content">
+    <p class="overlay"><b>PROCRASTINATION</b></p>
+  
+    </div>
      <nav>
     <div class="nav-wrapper">
       <a href="content.html" class="cool">Content</a>

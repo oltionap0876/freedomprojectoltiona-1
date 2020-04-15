@@ -7,20 +7,89 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"></script>
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+       <style>
+    .column {
+  float: left;
+  width: 33.33%;
+  color: black;
+  column-rule-style: double;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.header {
+  background-color: lavender;
+  padding: 20px;
+  text-align: center;
+}
+.dropbtn {
+  background-color: darkgrey;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+  }
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: navy;
+}
+</style>
      <nav>
     <div class="nav-wrapper">
-      <a href="index.html" class="cool">Back to Home Page</a>
-      <h5 class="col"> <b>History: </b>
-        In this section, we will be talking about how procrastination originally started, its origins, how it affected people in the past, and how they are compared and contrasted to modern-day society........
+  <div class="dropdown">
+  <button class="dropbtn">Menu</button>
+  <div class="dropdown-content cool header">
+  <a href="index.html">Back To Home Page</a>
+  <a href="history.html">History</a>
+  <a href="statistics.html">Statistics</a>
+  <a href="anecdotals.html">Anecdotals</a>
+  </div>
+     </div>
+      <div class="row">
+      <div class="column">
+      <h5> <b>History: </b></h5>
+       <p> In this section, we will be talking about how procrastination originally started, its origins, how it affected people in the past, and how they are compared and contrasted to modern-day society.</p></div>
 
 
-       <b> Statistics:</b>
-        In this section, we will be talking about how in modern-day society, the percentage of how many people procrastinate on a daily basis, what keeps them procrastinated, and the remedies that can help you stop the addicting cycle of laziness................
+      <div class="column"><h5><b> Statistics:</b></h5>
+       <p> In this section, we will be talking about how in modern-day society, the percentage of how many people procrastinate on a daily basis, what keeps them procrastinated, and the remedies that can help you stop the addicting cycle of laziness.</p></div>
 
 
-       <b> Anecdotals:</b>
-        In this section, we will be talking about other people's experience with procrastination, the most weirdest, funniest, and heartbreaking stories shared by people in the age group of 14-22.
-        </h5>
+      <div class="column"> <h5><b> Anecdotals:</b></h5>
+       <p> In this section, we will be talking about other people's experience with procrastination, the most weirdest, funniest, and heartbreaking stories shared by people in the age group of 14-22.</p></div>
+       </div>
+      
     </div>
   </nav>
   </head>

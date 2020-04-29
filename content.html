@@ -25,7 +25,7 @@
   text-align: center;
 }
 .dropbtn {
-  background-color: darkgrey;
+  background-color: #3498DB;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -33,15 +33,21 @@
   cursor: pointer;
 }
 
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
 .dropdown {
   position: relative;
   display: inline-block;
 }
+
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #f1f1f1;
   min-width: 160px;
+  overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -53,28 +59,23 @@
   display: block;
 }
 
-.dropdown-content a:hover {
-  background-color: #f1f1f1
-  }
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
 
 .dropdown:hover .dropbtn {
   background-color: navy;
 }
+.show {display: block;}
 </style>
      <nav>
     <div class="nav-wrapper">
   <div class="dropdown">
-  <button class="dropbtn">Menu</button>
-  <div class="dropdown-content cool header">
+  <button onclick="myFunction()" class="dropbtn">Menu</button>
+  <div id="myDropdown" class="dropdown-content cool header">
   <a href="index.html">Back To Home Page</a>
   <a href="history.html">History</a>
   <a href="statistics.html">Statistics</a>
   <a href="anecdotals.html">Anecdotals</a>
   </div>
+     </div>
      </div>
       <div class="row">
       <div class="column">
@@ -94,7 +95,20 @@
   </nav>
   </head>
   <body>
-<script src="script.js"></script>
-
+<script src="script.js">
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
   </body>
 </html>

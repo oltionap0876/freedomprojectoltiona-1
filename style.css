@@ -41,3 +41,9 @@
   .column {
     width: 100%;
   }
+  .hola{
+    font-family: cursive;
+    font-size: 30px;
+    background: linear-gradient(to right, #ccccff 0%, #cc99ff 100%);
+    text-align: center;
+  }
